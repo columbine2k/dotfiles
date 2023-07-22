@@ -32,5 +32,6 @@ opt.smartcase = true
 
 -- 外观
 opt.termguicolors = true
+opt.cursorline = true
 opt.signcolumn = "yes"
 opt.showtabline = 2
