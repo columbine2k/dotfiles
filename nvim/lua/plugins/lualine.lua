@@ -43,7 +43,7 @@ return {
           -- 主题
 					theme = 'ayu_mirage',
 					component_separators = { left = '', right = ''},
-					section_separators = { left = '', right = ''},
+					section_separators = { left = '', right = ''},
 				},
 				sections = {
 					lualine_a = { {'mode', fmt = function(s) return mode_map[s] or s end} },
@@ -73,6 +73,7 @@ return {
 					lualine_x = { "location" },
 					lualine_y = {},
 					lualine_z = {}
+        }
 			})
 		end
 	}
