@@ -50,7 +50,8 @@ return {
 					lualine_b = {
 						{
 							"branch",
-							icon = ""
+							icon = "",
+							color = { fg = "#98c379" }
 						},
 						{
 							"diff",
@@ -58,12 +59,20 @@ return {
 							symbols = { added = "", modified = "", removed = "" }
 						},
 					},
-					lualine_x = {
-						"filetype"
+					lualine_x = { "filetype" },
+					lualine_y = {
+            { "encoding", color = { bg = "#707a8c" } },
+            { unix , color = { bg = "#707a8c"} }
 					},
-					lualine_y = { "location", "progress" },
-          lualine_z = { unix , "encoding" }
+          lualine_z = { "progress", "location" }
 				},
+				inactive_sections = {
+					lualine_a = {},
+					lualine_b = {},
+					lualine_c = { "filename" },
+					lualine_x = { "location" },
+					lualine_y = {},
+					lualine_z = {}
 			})
 		end
 	}
