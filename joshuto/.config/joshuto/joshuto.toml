@@ -1,0 +1,40 @@
+numbered_command = false
+use_trash = true # 启用回收站
+watch_files = true # 实时监测文件变化
+
+xdg_open = false
+xdg_open_fork = false
+
+#--- 显示设置 ---------------------------------------------------
+[display]
+# 可选 "default, hsplit"
+mode = "default"
+
+automatically_count_files = false
+collapse_preview = true # 没有可用预览时关闭预览窗口
+# 父视图（可选）、当前视图和预览的比率
+column_ratio = [1, 4, 4]
+scroll_offset = 6
+show_borders = true
+show_hidden = true # 显示隐藏文件
+show_icons = true
+tilde_in_titlebar = true
+# 文件路径,可选"none, absolute, relative"
+line_number_style = "absolute"
+
+#--- 文件排序 ---------------------------------------------------
+[display.sort]
+# lexical, mtime, natural, size, ext
+sort_method = "natural"
+case_sensitive = false
+directories_first = true
+reverse = false
+
+#--- 文件预览 ---------------------------------------------------
+[preview]
+max_preview_size = 2097152                           # 2MB
+preview_script = "~/.config/joshuto/preview_file.sh" # 预览脚本
+
+[tab]
+# inherit, home, root
+home_page = "home"
