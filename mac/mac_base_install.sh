@@ -15,6 +15,8 @@ brew install font-lxgw-wenkai
 brew install ripgrep
 # fd 
 brew install fd
+# ag
+brew install the_silver_searcher
 # fzf
 brew install fzf
 # neofetch

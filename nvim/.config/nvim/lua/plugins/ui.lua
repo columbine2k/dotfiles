@@ -1,12 +1,19 @@
 return {
-	-- 主题
+	-- colorscheme
 	{
 		'Shatur/neovim-ayu',
 		config = function()
 			vim.cmd( "colorscheme ayu-mirage")
 		end,
 	},
-	-- 函数树
+  {
+    'goolord/alpha-nvim',
+    event = "VimEnter",
+    config = function()
+      require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end,
+  },
+	-- 函数树(依赖 lsp)
   {
     'utilyre/barbecue.nvim',
     name = "barbecue",

@@ -27,19 +27,17 @@ return {
 			wilder.set_option('renderer', wilder.popupmenu_renderer(
 				wilder.popupmenu_border_theme({
 					highlights = {
-						accent = "WilderAccent",
-						selected_accent = "WilderSelectedAccent",
+            accent = "WilderAccent",
 					},
 					highlighter = wilder.basic_highlighter(),
 					left = { ' ', wilder.popupmenu_devicons() },
 					right = { ' ', wilder.popupmenu_scrollbar() },
 					border = 'rounded',
-					max_height = 17
+					max_height = 10
 				})
 			))
 			-- 设置高亮
-			vim.api.nvim_set_hl(0, 'WilderAccent', { fg = '#ffad66' })
-			vim.api.nvim_set_hl(0, 'WilderSelectedAccent', { fg = '#ffad66', bg = '#1c212b' })
+			vim.api.nvim_set_hl(0, 'WilderAccent', { fg = '#d5ff80' })
 			-- 设置快捷键
 			vim.api.nvim_set_keymap('c', '<tab>', [[wilder#in_context() ? wilder#next() : '<tab>']],   { noremap = true, expr = true })
 			vim.api.nvim_set_keymap('c', '<Down>', [[wilder#in_context() ? wilder#next() : '<down>']], { noremap = true, expr = true })

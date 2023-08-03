@@ -13,8 +13,9 @@ Plug 'Luxed/ayu-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " == 文件浏览器
-Plug 'preservim/nerdtree' |
-   \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree'
+" == 搜索
+Plug 'junegunn/fzf.vim'
 " == 图标
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
@@ -55,7 +56,17 @@ let mapleader=' '
 let g:ayucolor='mirage'
 colorscheme ayu
 " == airline
+" 开启 tabline
+let g:airline#extensions#tabline#enabled = 1
 
 " == NERDTree
+" 显示隐藏文件
+let NERDTreeShowHidden=1
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>ef :NERDTreeFind<CR>
+" == fzf
+
+nnoremap <leader>fa :Ag<cr> " Ag 全局文本搜索
+nnoremap <leader>f :Files<cr> " 目录下文件搜索
+nnoremap <leader>ft :BLines<cr> " 文件内文本搜索
+nnoremap <leader>fh :CHistory<cr> " 目录下最近文件搜索
