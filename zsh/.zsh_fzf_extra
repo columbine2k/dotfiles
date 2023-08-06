@@ -8,34 +8,34 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
  --color=info:#73d0ff,prompt:#707a8c,pointer:#cbccc6
  --color=marker:#73d0ff,spinner:#73d0ff,header:#d4bfff'
 
-FZF_DEFAULT_OPTS="
+# 基础设置
+export FZF_DEFAULT_OPTS="
 --exact
 --prompt '❯ '
 --pointer '➤'
 --marker '┃'
---border
+--height 60%
+--layout reverse
+--border none
 --info inline
---height 80%
---extended
 --ansi
---reverse
---cycle
---preview \"($FZF_FILE_HIGHLIGHTER {} || $FZF_DIR_HIGHLIGHTER {}) 2>/dev/null | head -200\"
---preview-window right:60%:hidden
+--preview-window 'border-horizontal'
+--preview 'bat --style=numbers --color=always {}'
 "
-export FZF_DEFAULT_OPTS
 
-# 预览
-FZF_FILE_HIGHLIGHTER='cat'
-(( $+commands[bat] )) && FZF_FILE_HIGHLIGHTER='bat --color=always'
-export FZF_FILE_HIGHLIGHTER
+# tree
+_fzf_comprun() {
+  local command=$1
+  shift
 
-FZF_DIR_HIGHLIGHTER='ls -l --color=always'
-(( $+commands[tree] )) && FZF_DIR_HIGHLIGHTER='tree -CtrL2'
-export FZF_DIR_HIGHLIGHTER
+  case "$command" in
+    cd)           fzf "$@" --preview 'tree -C {} | head -200' ;;
+    *)            fzf "$@" ;;
+  esac
+}
 
-FZF_DEFAULT_COMMAND='(git ls-tree -r --name-only HEAD ||
-         find . -path "*/\.*" -prune -o -type f -print -o -type l -print | sed s/^..//) 2> /dev/null'
-(( $+commands[ag] )) && FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g "" 2>/dev/null'
-(( $+commands[fd] )) && FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git 2>/dev/null'
-export FZF_DEFAULT_COMMAND
+# fd 
+export FZF_DEFAULT_COMMAND="fd 
+--exclude={.git,.idea,.vscode,.sass-cache,node_modules,build}
+--type f 
+"

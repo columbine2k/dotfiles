@@ -20,35 +20,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export BAT_THEME="base16-256"
 
 #==== fzf
-# source ~/.zsh_fzf_extra
-#== 主题
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
- --color=fg:#cbccc6,bg:#1f2430,hl:#707a8c
- --color=fg+:#707a8c,bg+:#191e2a,hl+:#ffcc66
- --color=info:#73d0ff,prompt:#707a8c,pointer:#cbccc6
- --color=marker:#73d0ff,spinner:#73d0ff,header:#d4bfff'
-#== 触发键位
-export FZF_COMPLETION_TRIGGER='..'
-#== 基础设置
-export FZF_DEFAULT_OPTS="
- --height 40% 
- --layout=reverse
- --preview 'bat --style=numbers --color=always --line-range :800 {}'"
-#== tree 目录预览
-_fzf_comprun() {
-  local command=$1
-  shift
-
-  case "$command" in
-    cd)           fzf "$@" --preview 'tree -C {} | head -200' ;;
-    *)            fzf "$@" ;;
-  esac
-}
-#== 使用 fd 搜索
-# [--exclude ] 为忽略目录
-export FZF_DEFAULT_COMMAND="fd --exclude={.git,build,.local} --type f"
-export FZF_CTRL_T_COMMAND="fd --type f"
-export FZF_ALT_C_COMMAND="fd --type d"
+source ~/.zsh_fzf_extra
 
 #--- 杂项 ---------------------------------------------------
 # 如果粘贴URL和其他文本时出现混乱,请取消下面一行的注释
