@@ -22,9 +22,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- ---------- 插件 ---------- ---
 -- Nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
--- tabline 
-keymap.set("n", "<leader>l", ":TablineBufferNext<CR>")
-keymap.set("n", "<leader>h", ":TablineBufferPrevious<CR>")
+-- bufferline
+keymap.set("n", "<leader>l", ":BufferLineCycleNext<CR>")
+keymap.set("n", "<leader>h", ":BufferLineCyclePrev<CR>")
 -- Peek MarkdownPreview
 keymap.set("n", "<leader>r", ":PeekOpen<CR>")
 -- Obsidian

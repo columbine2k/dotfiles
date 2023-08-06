@@ -20,6 +20,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export BAT_THEME="base16-256"
 
 #==== fzf
+# source ~/.zsh_fzf_extra
 #== 主题
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
  --color=fg:#cbccc6,bg:#1f2430,hl:#707a8c
