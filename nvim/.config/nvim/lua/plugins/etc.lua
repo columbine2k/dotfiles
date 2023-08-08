@@ -1,5 +1,5 @@
--- command 命令补全
 return {
+  -- wilder nvim_command命令提示
 	{
 		'gelguy/wilder.nvim',
 		config = function()
@@ -43,6 +43,12 @@ return {
 			vim.api.nvim_set_keymap('c', '<Down>', [[wilder#in_context() ? wilder#next() : '<down>']], { noremap = true, expr = true })
 			vim.api.nvim_set_keymap('c', '<up>', [[wilder#in_context() ? wilder#previous() : '<up>']], { noremap = true, expr = true })
 			vim.api.nvim_set_keymap('c', '0', '0', {})
-		end
-	}
+		end,
+	},
+	{
+		'numToStr/Comment.nvim',
+		config = function()
+			require('Comment').setup()
+		end,
+	},
 }

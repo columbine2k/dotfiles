@@ -1,11 +1,22 @@
 return {
-	-- colorscheme
+	-- colorscheme ayu
 	{
 		'Shatur/neovim-ayu',
 		config = function()
 			vim.cmd( "colorscheme ayu-mirage")
 		end,
 	},
+  -- colorscheme 神奈川
+  {
+    'rebelot/kanagawa.nvim',
+    config = true,
+  },
+  -- colorscheme everforest
+  {
+    'neanias/everforest-nvim',
+    config = function()
+    end,
+  },
   -- 欢迎屏幕
   {
     'goolord/alpha-nvim',
