@@ -34,9 +34,9 @@ return {
       -- 选项卡
       dashboard.section.buttons.val = {
         dashboard.button( "e", "  > New file" , ":ene <BAR> startinsert <CR>"),
-        dashboard.button( "<Leader>ff", "  > Find file", ":FzfLua files<CR>"),
+        dashboard.button( "<Leader>fl", "  > Find file", ":FzfLua files<CR>"),
         dashboard.button( "<Leader>fo", "  > Recent"   , ":FzfLua oldfiles<CR>"),
-        dashboard.button( "<Leader>fw", "  > Find Word", ":FzfLua grep<CR>"),
+        dashboard.button( "<Leader>fg", "  > Find Word", ":FzfLua live_grep<CR>"),
       }
       alpha.setup(dashboard.opts)
     end,
