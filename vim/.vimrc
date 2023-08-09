@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline-themes'
 " == 文件浏览器
 Plug 'preservim/nerdtree'
 " == 搜索
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " == 图标
 Plug 'ryanoasis/vim-devicons'
@@ -65,6 +66,16 @@ let NERDTreeShowHidden=1
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>ef :NERDTreeFind<CR>
 " == fzf
+let g:fzf_preview_window = ['right,40%,<50(down,50%)', 'ctrl-/']
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+
+com! -bar -bang Ag call fzf#vim#ag(<q-args>, fzf#vim#with_preview({'options': '--delimiter=: --nth=4..'}), <bang>0)
+com! CHistory call CHistory()
+
+func! CHistory()
+  call filter(v:oldfiles, "v:val =~ '^' . $PWD . '.*$'")
+  call fzf#vim#history(fzf#vim#with_preview(), 0)
+endf
 
 nnoremap <leader>fa :Ag<cr> " Ag 全局文本搜索
 nnoremap <leader>f :Files<cr> " 目录下文件搜索
