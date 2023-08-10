@@ -1,9 +1,8 @@
--- Markdown 文件预览
--- 需安装 Deno
 return {
   -- markdown 预览
+  -- 需安装 deno
 	{
-	  'toppair/peek.nvim',
+    'toppair/peek.nvim',
 	  build = 'deno task --quiet build:fast',
 	  ft = 'markdown',
 	  config = function()
