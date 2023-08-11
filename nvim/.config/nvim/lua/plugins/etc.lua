@@ -45,10 +45,4 @@ return {
 			vim.api.nvim_set_keymap('c', '0', '0', {})
 		end,
 	},
-	{
-		'numToStr/Comment.nvim',
-		config = function()
-			require('Comment').setup()
-		end,
-	},
 }
