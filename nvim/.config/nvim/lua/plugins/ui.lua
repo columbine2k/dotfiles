@@ -1,4 +1,10 @@
 return {
+  -- 图标包
+  {
+    'nvim-tree/nvim-web-devicons',
+    config = function()
+    end,
+  },
 	-- colorscheme ayu
 	{
 		'Shatur/neovim-ayu',
@@ -17,11 +23,19 @@ return {
     config = function()
     end,
   },
+  -- oceanic-next colorscheme
   {
     'mhartington/oceanic-next',
     config = function()
     end,
   },
+  -- 文件浏览器
+	{
+		'nvim-tree/nvim-tree.lua',
+		config = function()
+			require("nvim-tree").setup()
+		end,
+	},
   -- 欢迎屏幕
   {
     'goolord/alpha-nvim',
