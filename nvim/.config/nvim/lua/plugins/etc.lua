@@ -45,4 +45,12 @@ return {
 			vim.api.nvim_set_keymap('c', '0', '0', {})
 		end,
 	},
+  -- 右侧大纲
+  {
+    'stevearc/aerial.nvim',
+    config = function()
+      require('aerial').setup({
+      })
+    end,
+  },
 }

@@ -32,6 +32,7 @@ return {
 			  'marksman',
 				'prosemd_lsp',
 				'remark_ls',
+        'vale_ls',
 				'zk'
 			})			
 			lsp.setup()

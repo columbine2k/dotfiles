@@ -8,6 +8,7 @@ return {
 					"vim",
 					"bash",
 					"lua",
+          "dockerfile",
 					"typescript",
 					"markdown",
 					"markdown_inline",
