@@ -1,4 +1,10 @@
 return {
+  -- 窗口切换
+  {
+    'christoomey/vim-tmux-navigator',
+    config = function()
+    end,
+  },
   -- wilder nvim_command命令提示
 	{
 		'gelguy/wilder.nvim',
@@ -50,6 +56,11 @@ return {
     'stevearc/aerial.nvim',
     config = function()
       require('aerial').setup({
+        -- 快捷键
+        on_attach = function(bufnr)
+          vim.keymap.set('n', '{', '<cmd>AerialPrev<CR>', {buffer = bufnr})
+          vim.keymap.set('n', '}', '<cmd>AerialNext<CR>', {buffer = bufnr})
+        end
       })
     end,
   },

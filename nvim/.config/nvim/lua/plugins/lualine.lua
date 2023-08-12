@@ -52,7 +52,11 @@ return {
 						{ "filesize" },
 						{ "filename" }
 					},
-					lualine_c = { "progress", "location" },
+					lualine_c = { 
+            "progress", 
+            "location",
+            "aerial",
+          },
 					lualine_x = {
 						{
 							"b:gitsigns_head",

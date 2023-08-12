@@ -29,6 +29,12 @@ return {
     config = function()
     end,
   },
+  -- tokyonight colorscheme
+  {
+    'folke/tokyonight.nvim',
+    config = function()
+    end,
+  },
   -- 文件浏览器
 	{
 		'nvim-tree/nvim-tree.lua',
