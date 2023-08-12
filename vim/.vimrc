@@ -17,11 +17,15 @@ Plug 'preservim/nerdtree'
 " == 搜索
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" == Vimwiki
+Plug 'vimwiki/vimwiki'
 " == 图标
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " --- 基础设置 ---------------------------------------------------
+" 兼容
+set nocompatible
 " == 行号
 set nu
 set relativenumber
@@ -35,6 +39,7 @@ set shiftround
 " == 鼠标
 set mouse=a
 " == 语法
+filetype plugin on
 syntax on
 syntax enable
 " == 搜索
@@ -65,6 +70,7 @@ let g:airline#extensions#tabline#enabled = 1
 let NERDTreeShowHidden=1
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>ef :NERDTreeFind<CR>
+
 " == fzf
 let g:fzf_preview_window = ['right,40%,<50(down,50%)', 'ctrl-/']
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
@@ -78,6 +84,11 @@ func! CHistory()
 endf
 
 nnoremap <leader>fa :Ag<cr> " Ag 全局文本搜索
-nnoremap <leader>f :Files<cr> " 目录下文件搜索
+nnoremap <leader>fl :Files<cr> " 目录下文件搜索
 nnoremap <leader>ft :BLines<cr> " 文件内文本搜索
 nnoremap <leader>fh :CHistory<cr> " 目录下最近文件搜索
+
+" == Vimwiki
+let g:vimwiki_ext2syntax = {'.md': 'markdown'}
+let g:vimwiki_global_ext = 0
+let g:vimwiki_list = [{'path': '~/Documents/PersonalNotes','syntax': 'markdown', 'ext': '.md'}]
