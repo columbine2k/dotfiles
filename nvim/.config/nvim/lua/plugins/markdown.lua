@@ -16,24 +16,6 @@ return {
 	},
   -- wiki
   {
-    'mickael-menu/zk-nvim',
-    config = function()
-      require("zk").setup ({
-        picker = "fzf",
-        lsp = {
-          config = {
-            cmd = { "zk", "lsp" },
-            name = "zk",
-          },
-          auto_attach = {
-            enabled = true,
-            filetypes = { "markdown" },
-          },
-        },
-      })
-    end,
-  },
-  {
     'lervag/wiki.vim',
     config = function()
       vim.g.wiki_root = "~/Documents/PersonalNotes/"
