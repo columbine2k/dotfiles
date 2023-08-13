@@ -31,6 +31,8 @@ brew install joshuto
 brew install tree
 # lazygit
 brew install jesseduffield/lazygit/lazygit
+# zk 文档编辑器
+brew install zk
 # brew 安装包升级程序
 brew tap buo/cask-upgrade
 # deno

@@ -1,0 +1,61 @@
+# 笔记本位置
+[notebook]
+dir = "~/Documents/PersonalNotes/"
+
+# ----- 笔记设置 -----
+[note]
+language = "zh"
+
+# 默认笔记标题
+default-title = "Untitled"
+# 用于生成笔记文件名的模板
+filename = "{{id}}-{{slug title}}"
+# 笔记扩展名
+extension = "md"
+# 模板
+# 默认模板位置 .zk/templates/
+template = "default.md"
+
+# ----- 随机 ID 配置 -----
+id-charset = "alphanum"
+id-length = 4
+id-case = "lower"
+
+# ----- 额外信息 -----
+[extra]
+author = "Dylan Soh"
+
+# ----- 日记 -----
+[group.journal]
+paths = ["journal/weekly", "journal/daily"]
+
+[group.journal.note]
+filename = "{{format-date now}}"
+
+# ----- Markdown 设置 -----
+[format.markdown]
+hashtags = true
+colon-tags = true
+
+# ----- 外部工具 -----
+[tool]
+editor = "nvim"
+shell = "/bin/zsh"
+pager = "less -FIRX"
+fzf-preview = "bat -p --color always {-1}"
+
+# ----- 过滤器 -----
+[filter]
+recents = "--sort created- --created-after 'last two weeks'"
+
+# ----- 别名 -----
+[alias]
+edlast = "zk edit --limit 1 --sort modified- $@"
+recent = "zk edit --sort created- --created-after 'last two weeks' --interactive"
+lucky = "zk list --quiet --format full --sort random --limit 1"
+
+# ----- LSP -----
+[lsp]
+[lsp.diagnostics]
+wiki-title = "hint"
+dead-link = "error"
