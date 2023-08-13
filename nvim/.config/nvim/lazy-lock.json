@@ -32,12 +32,13 @@
   "nvim-ts-rainbow2": { "branch": "master", "commit": "b3120cd5ae9ca524af9cb602f41e12e301fa985f" },
   "nvim-web-devicons": { "branch": "master", "commit": "ab899311f8ae00a47eae8e0879506cead8eb1561" },
   "oceanic-next": { "branch": "master", "commit": "09833f72d5ba23de2e8bcae18f479f326f5f677a" },
+  "onedark.nvim": { "branch": "master", "commit": "09b71d84bd2524438e48c0aa5b54d855cc72af32" },
   "peek.nvim": { "branch": "master", "commit": "67752e7581f88da6899838985a05705b008e4185" },
   "smartyank.nvim": { "branch": "master", "commit": "7e3905578f646503525b2f7018b8afd17861018c" },
   "tokyonight.nvim": { "branch": "main", "commit": "1ee11019f8a81dac989ae1db1a013e3d582e2033" },
   "vim-table-mode": { "branch": "master", "commit": "9555a3e6e5bcf285ec181b7fc983eea90500feb4" },
   "vim-tmux-navigator": { "branch": "master", "commit": "cdd66d6a37d991bba7997d593586fc51a5b37aa8" },
+  "which-key.nvim": { "branch": "main", "commit": "7ccf476ebe0445a741b64e36c78a682c1c6118b7" },
   "wiki.vim": { "branch": "master", "commit": "04459625f1b6faa2b02ce763fc6fbc24d4a51f21" },
-  "wilder.nvim": { "branch": "master", "commit": "679f348dc90d80ff9ba0e7c470c40a4d038dcecf" },
-  "zk-nvim": { "branch": "main", "commit": "797618aa07f58ceba6f79fb6e777e8e45c51e1ce" }
+  "wilder.nvim": { "branch": "master", "commit": "679f348dc90d80ff9ba0e7c470c40a4d038dcecf" }
 }
