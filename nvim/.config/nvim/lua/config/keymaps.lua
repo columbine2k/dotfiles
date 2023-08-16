@@ -31,7 +31,3 @@ keymap.set("n", "<leader>h", ":BufferLineCyclePrev<CR>")
 keymap.set("n", "<leader>r", ":PeekOpen<CR>")
 -- Aerial
 keymap.set("n", "\\l", ":AerialToggle!<CR>")
--- Obsidian
--- keymap.set("n", "<leader>on", ":ObsidianNew<CR>")
--- keymap.set("n", "<leader>oj", ":ObsidianToday<CR>")
--- keymap.set("n", "<leader>of", ":ObsidianSearch<CR>")

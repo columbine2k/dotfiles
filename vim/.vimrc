@@ -18,7 +18,11 @@ Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " == Vimwiki
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 Plug 'vimwiki/vimwiki'
+" == 窗口移动
+Plug 'christoomey/vim-tmux-navigator',
 " == 图标
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
