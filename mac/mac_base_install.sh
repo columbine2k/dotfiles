@@ -37,6 +37,8 @@ brew install jesseduffield/lazygit/lazygit
 brew tap buo/cask-upgrade
 # deno
 brew install deno
+# pngpaste
+brew install pngpaste
 # stow 配置文件管理
 brew install stow
 # 安卓 SDK 平台工具

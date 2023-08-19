@@ -20,6 +20,7 @@ Plug 'junegunn/fzf.vim'
 " == Vimwiki
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'vimwiki/vimwiki'
 " == 窗口移动
 Plug 'christoomey/vim-tmux-navigator',
@@ -91,6 +92,10 @@ nnoremap <leader>fa :Ag<cr> " Ag 全局文本搜索
 nnoremap <leader>fl :Files<cr> " 目录下文件搜索
 nnoremap <leader>ft :BLines<cr> " 文件内文本搜索
 nnoremap <leader>fh :CHistory<cr> " 目录下最近文件搜索
+
+" == table mode
+let g:table_mode_corner='|'
+nnoremap \\f :TableModeToggle<cr> " 启动表格模式
 
 " == Vimwiki
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
