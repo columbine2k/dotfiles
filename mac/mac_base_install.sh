@@ -80,9 +80,11 @@ brew install --cask mweb-pro
 # Notion
 # brew install --cask notion
 # Obsidian
-brew install --cask obsidian
+# brew install --cask obsidian
 # Scrivener
 brew install --cask scrivener
+# Anytype
+brew install --cask anytype
 
 # === 下载应用 ===
 # Motrix
