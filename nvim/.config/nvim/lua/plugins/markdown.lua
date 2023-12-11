@@ -1,4 +1,7 @@
 return {
+  {
+    'ixru/nvim-markdown',
+  },
   -- markdown 预览
   -- 需安装 deno
 	{
@@ -14,32 +17,32 @@ return {
 		  })
 	  end,
 	},
-  -- obsidian 
-  {
-    'epwalsh/obsidian.nvim',
-    dependencies = { 
-      "nvim-lua/plenary.nvim",
-      "godlygeek/tabular",
-      "preservim/vim-markdown",
-    },
-    config = function()
-      require("obsidian").setup({
-        dir = "~/Documents/PersonalNotes/",
-        notes_subdir = "VimNote",
-        daily_notes = {
-          folder = "Journal",
-          date_format = "%Y-%m-%d",
-        },
-        completion = {
-          nvim_cmp = true,
-          min_chars = 2,
-          new_notes_location = "notes_subdir",
-          prepend_note_id = true
-        },
-        finder = "fzf-lua",
-      })
-    end,
-  },
+  -- -- obsidian 
+  -- {
+  --   'epwalsh/obsidian.nvim',
+  --   dependencies = { 
+  --     "nvim-lua/plenary.nvim",
+  --     "godlygeek/tabular",
+  --     "preservim/vim-markdown",
+  --   },
+  --   config = function()
+  --     require("obsidian").setup({
+  --       dir = "~/Documents/PersonalNotes/",
+  --       notes_subdir = "VimNote",
+  --       daily_notes = {
+  --         folder = "Journal",
+  --         date_format = "%Y-%m-%d",
+  --       },
+  --       completion = {
+  --         nvim_cmp = true,
+  --         min_chars = 2,
+  --         new_notes_location = "notes_subdir",
+  --         prepend_note_id = true
+  --       },
+  --       finder = "fzf-lua",
+  --     })
+  --   end,
+  -- },
   -- 表格格式化
   {
     'dhruvasagar/vim-table-mode',
