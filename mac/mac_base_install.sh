@@ -38,7 +38,7 @@ brew tap buo/cask-upgrade
 # deno
 brew install deno
 # pngpaste
-brew install pngpaste
+# brew install pngpaste
 # stow 配置文件管理
 brew install stow
 # 安卓 SDK 平台工具
@@ -46,11 +46,11 @@ brew install --cask android-platform-tools
 # 进程监控 bottom
 brew install bottom
 # exiftool
-brew install exiftool
+# brew install exiftool
 # 图片转 ascii 显示
-brew install TheZoraiz/ascii-image-converter/ascii-image-converter
+# brew install TheZoraiz/ascii-image-converter/ascii-image-converter
 # 终端复古图片查看器
-brew install chafa
+# brew install chafa
 # tmux
 # brew install tmux 
 
@@ -79,13 +79,12 @@ brew install --cask marginnote
 brew install --cask mweb-pro
 # Notion
 # brew install --cask notion
-# Obsidian
-# brew install --cask obsidian
 # Scrivener
 brew install --cask scrivener
 # Anytype
-brew install --cask anytype
-
+# brew install --cask anytype
+# Obsidian
+brew install --cask obsidian
 # === 下载应用 ===
 # Motrix
 brew install --cask motrix
@@ -106,4 +105,4 @@ brew install --cask ogdesign-eagle
 
 # === 其他应用 === 
 # balenaEtcher
-brew install --cask balenaetcher
+# brew install --cask balenaetcher
