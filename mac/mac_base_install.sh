@@ -31,6 +31,10 @@ brew install joshuto
 brew install tree
 # lazygit
 brew install jesseduffield/lazygit/lazygit
+# stow 配置文件管理
+brew install stow
+# 进程监控 bottom
+brew install bottom
 # zk 文档编辑器
 # brew install zk
 # brew 安装包升级程序
@@ -39,12 +43,8 @@ brew tap buo/cask-upgrade
 brew install deno
 # pngpaste
 # brew install pngpaste
-# stow 配置文件管理
-brew install stow
 # 安卓 SDK 平台工具
 brew install --cask android-platform-tools
-# 进程监控 bottom
-brew install bottom
 # exiftool
 # brew install exiftool
 # 图片转 ascii 显示
@@ -73,18 +73,19 @@ brew install --cask textmate
 brew install --cask telegram
 
 # === 笔记应用 ===
+# Obsidian
+brew install --cask obsidian
 # MarginNote 3
 brew install --cask marginnote
 # Mweb Pro
 brew install --cask mweb-pro
-# Notion
-# brew install --cask notion
 # Scrivener
 brew install --cask scrivener
 # Anytype
 # brew install --cask anytype
-# Obsidian
-brew install --cask obsidian
+# Notion
+# brew install --cask notion
+
 # === 下载应用 ===
 # Motrix
 brew install --cask motrix
