@@ -9,7 +9,7 @@ return {
     config = function()
       local kiwi = require('kiwi')
 			vim.keymap.set("n", "<leader>ww", kiwi.open_wiki_index, { noremap = true })
-			vim.keymap.set("n", "<leader-x>", kiwi.todo.toggle, { noremap = true })
+			vim.keymap.set("n", "<leader>t", kiwi.todo.toggle, { noremap = true })
       require('kiwi').setup({
         {
           name = "law",
