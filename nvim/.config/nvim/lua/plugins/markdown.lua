@@ -2,6 +2,22 @@ return {
   {
     'ixru/nvim-markdown',
   },
+  -- markdown wiki
+  {
+    'serenevoid/kiwi.nvim',
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      local kiwi = require('kiwi')
+			vim.keymap.set("n", "<leader>ww", kiwi.open_wiki_index, { noremap = true })
+			vim.keymap.set("n", "<leader-x>", kiwi.todo.toggle, { noremap = true })
+      require('kiwi').setup({
+        {
+          name = "law",
+          path = "/Users/suzhenkai/Documents/PersonalNotes/Law/",
+        },
+      })
+    end,
+  },
   -- markdown 预览
   -- 需安装 deno
 	{
