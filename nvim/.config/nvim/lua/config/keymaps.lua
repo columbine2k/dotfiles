@@ -27,7 +27,9 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- bufferline
 keymap.set("n", "<leader>l", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<leader>h", ":BufferLineCyclePrev<CR>")
+-- Markdown Preview
+keymap.set("n", "<leader>r", ":MarkdownPreviewToggle<CR>")
 -- Peek MarkdownPreview
-keymap.set("n", "<leader>r", ":PeekOpen<CR>")
+-- keymap.set("n", "<leader>r", ":PeekOpen<CR>")
 -- Aerial
 keymap.set("n", "\\l", ":AerialToggle!<CR>")

@@ -32,8 +32,10 @@ reverse = false
 
 #--- 文件预览 ---------------------------------------------------
 [preview]
-max_preview_size = 2097152                           # 2MB
-preview_script = "~/.config/joshuto/preview_file.sh" # 预览脚本
+max_preview_size = 999999999
+preview_script = "~/.config/joshuto/scripts/preview.sh"
+preview_shown_hook_script   = "~/.config/joshuto/scripts/show_image.sh"
+preview_removed_hook_script = "~/.config/joshuto/scripts/remove_image.sh"
 
 [tab]
 # inherit, home, root

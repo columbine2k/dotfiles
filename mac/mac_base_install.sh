@@ -35,16 +35,16 @@ brew install jesseduffield/lazygit/lazygit
 brew install stow
 # 进程监控 bottom
 brew install bottom
-# zk 文档编辑器
-# brew install zk
 # brew 安装包升级程序
 brew tap buo/cask-upgrade
-# deno
-brew install deno
-# pngpaste
-# brew install pngpaste
 # 安卓 SDK 平台工具
 brew install --cask android-platform-tools
+# zk 文档编辑器
+# brew install zk
+# pngpaste
+# brew install pngpaste
+# deno
+# brew install deno
 # exiftool
 # brew install exiftool
 # 图片转 ascii 显示
