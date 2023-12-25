@@ -73,14 +73,14 @@ brew install --cask textmate
 brew install --cask telegram
 
 # === 笔记应用 ===
-# Obsidian
-brew install --cask obsidian
 # MarginNote 3
 brew install --cask marginnote
 # Mweb Pro
 brew install --cask mweb-pro
 # Scrivener
 brew install --cask scrivener
+# Obsidian
+# brew install --cask obsidian
 # Anytype
 # brew install --cask anytype
 # Notion
