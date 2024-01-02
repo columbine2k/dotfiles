@@ -8,13 +8,13 @@ ZSH_THEME="agnoster"
 #--- 插件 ---------------------------------------------------
 # 默认插件位置 $ZSH/plugins/
 # 自定插件位置 $ZSH_CUSTOM/plugins/
-plugins=(git fzf fzf-tab)
+plugins=(git fzf fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 #--- 用户配置 ---------------------------------------------------
 #==== oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #==== bat
 export BAT_THEME="base16-256"
