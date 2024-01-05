@@ -16,7 +16,8 @@ git clone https://github.com/Aloxaf/fzf-tab ~/.oh-my-zsh/custom/plugins/fzf-tab
 # === 字体 ===
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono-nerd-font
-brew install --cask font-ibm-plex-mono
+brew install --cask font-blex-mono-nerd-font
+# brew install --cask font-ibm-plex-mono
 # brew install --cask font-dejavu-sans-mono-nerd-font
 brew install font-lxgw-wenkai
 
