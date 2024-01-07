@@ -33,7 +33,7 @@ brew install the_silver_searcher
 # fzf
 brew install fzf
 # neofetch
-brew install neofetch
+brew install fastfetch
 # neovim
 brew install neovim
 # bat 终端文件预览

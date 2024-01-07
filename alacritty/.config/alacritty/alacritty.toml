@@ -1,0 +1,16 @@
+# 主题
+import = [
+  "~/.config/alacritty/themes/everforest_dark.toml"
+]
+
+[window]
+dimensions = { columns = 100, lines = 40 }
+# 显示边框与标题
+decorations = "Full"
+# 不透明度
+opacity = 1
+dynamic_title = true
+
+[font]
+normal = { family = "BlexMono Nerd Font Mono", style = "Regular" }
+size = 15.0
