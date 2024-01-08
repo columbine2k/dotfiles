@@ -25,7 +25,7 @@ source $ZSH/oh-my-zsh.sh
 # source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #==== bat
-export BAT_THEME="base16-256"
+export BAT_THEME="gruvbox-dark"
 
 #==== fzf
 source ~/.zsh_fzf_extra
